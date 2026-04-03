@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import HeaderAppBar from "./HeaderAppBar";
 
+import UserTableList from "./UserTableList.jsx";
+import NotFound from "./NotFound.jsx";
+import Login from "./Login.jsx";
+import { AuthProvider } from "./AuthContext";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AuthProvider>
+        <HeaderAppBar />
+
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/user" element={<UserTableList />} />
+          <Route path="/add" element={<UserTableList />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/edit/:id" element={<UserTableList />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 

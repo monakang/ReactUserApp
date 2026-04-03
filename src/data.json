@@ -1,0 +1,60 @@
+{
+  "user": [
+    {
+      "email": "User2@g.c",
+      "name": "User2",
+      "gender": "Female",
+      "id": "2eb0"
+    },
+    {
+      "email": "user3@g.c",
+      "name": "User3",
+      "gender": "Male",
+      "id": "191e"
+    },
+    {
+      "email": "user4@g.f",
+      "name": "User4",
+      "gender": "Female",
+      "id": "32fc"
+    },
+    {
+      "name": "User5",
+      "email": "user5@g.c",
+      "gender": "Female",
+      "id": "b416"
+    },
+    {
+      "id": "f36d",
+      "name": "User1",
+      "email": "User1@g.c",
+      "gender": "Male"
+    },
+    {
+      "id": "e800",
+      "name": "User6",
+      "email": "user6@g.c",
+      "gender": "Male"
+    },
+    {
+      "email": "user7@g.c",
+      "name": "User7",
+      "gender": "Male",
+      "id": "abd6"
+    },
+    {
+      "id": "6580",
+      "email": "user9@d.c",
+      "name": "User9",
+      "gender": "Male"
+    }
+  ],
+  "authenicate": [
+    {
+      "username": "admin",
+      "password": "123",
+      "tokenId": "dummy-token-id",
+      "id": "f219"
+    }
+  ]
+}
