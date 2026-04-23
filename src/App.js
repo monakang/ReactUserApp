@@ -1,6 +1,5 @@
 import "./App.css";
 import HeaderAppBar from "./HeaderAppBar";
-
 import UserTableList from "./UserTableList.jsx";
 import NotFound from "./NotFound.jsx";
 import Login from "./Login.jsx";
@@ -11,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-        <HeaderAppBar />
+        <HeaderAppBar title="React CRUD App" />
 
         <Routes>
           <Route path="/" element={<Login />} />
